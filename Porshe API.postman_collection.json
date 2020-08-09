@@ -1,0 +1,419 @@
+{
+	"info": {
+		"_postman_id": "fed40c82-f162-405e-8165-80c76738f03c",
+		"name": "Porshe API",
+		"description": "Porshe API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "bernandotorrez4@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "42018a23a4f89d3c246d1808aed0c2ec",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://localhost:3001/login/doLogin",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"login",
+						"doLogin"
+					]
+				},
+				"description": "Login"
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Car Model",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Auth-Token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfZW1haWwiOiJiZXJuYW5kb3RvcnJlejRAZ21haWwuY29tIiwiX3Bob25lIjoiMDg5Njg3NjEwNjM5IiwiX2RhdGVfYmlydGgiOiIxOTk1LTEwLTE5IiwiX2lzQWRtaW4iOmZhbHNlLCJpYXQiOjE1ODkxOTMyNjR9.tOCwb8E9ofrLrouoeCwLSw8Idt2ZzpL2WvInH4t1yNM",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:3001/car/all/model",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"car",
+						"all",
+						"model"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "bernandotorrez4@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "42018a23a4f89d3c246d1808aed0c2ec",
+							"type": "text"
+						},
+						{
+							"key": "gender",
+							"value": "M",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "1234567890",
+							"type": "text"
+						},
+						{
+							"key": "date_birth",
+							"value": "1995-10-19",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Tes",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "Simprug",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://localhost:3001/login/register",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"login",
+						"register"
+					]
+				},
+				"description": "Register"
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Car Model (Search)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Auth-Token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfZW1haWwiOiJiZXJuYW5kb3RvcnJlejRAZ21haWwuY29tIiwiX3Bob25lIjoiMTIzNDU2Nzg5MCIsIl9kYXRlX2JpcnRoIjoiMTk5NS0xMC0xOSIsIl9pc0FkbWluIjpmYWxzZSwiaWF0IjoxNTg5MjU3MzMzfQ.KVUkrYfVMK-Ysvz5K74gv0CrTCIlgibJ77AsFb1aib8",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:3001/car/all/model/search?q=a",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"car",
+						"all",
+						"model",
+						"search"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "a"
+						}
+					]
+				},
+				"description": "Get All Car Model (User)"
+			},
+			"response": []
+		},
+		{
+			"name": "Get One Type Colour",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Auth-Token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfZW1haWwiOiJiZXJuYW5kb3RvcnJlejRAZ21haWwuY29tIiwiX3Bob25lIjoiMTIzNDU2Nzg5MCIsIl9kYXRlX2JpcnRoIjoiMTk5NS0xMC0xOSIsIl9pc0FkbWluIjpmYWxzZSwiaWF0IjoxNTg5MjU3MzMzfQ.KVUkrYfVMK-Ysvz5K74gv0CrTCIlgibJ77AsFb1aib8",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:3001/car/one/colour/detail?id=68&colour=1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"car",
+						"one",
+						"colour",
+						"detail"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "68"
+						},
+						{
+							"key": "colour",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Car All Model Type",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Auth-Token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfZW1haWwiOiJiZXJuYW5kb3RvcnJlejRAZ21haWwuY29tIiwiX3Bob25lIjoiMTIzNDU2Nzg5MCIsIl9kYXRlX2JpcnRoIjoiMTk5NS0xMC0xOSIsIl9pc0FkbWluIjpmYWxzZSwiaWF0IjoxNTg5MjU3MzMzfQ.KVUkrYfVMK-Ysvz5K74gv0CrTCIlgibJ77AsFb1aib8",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:3001/car/all/model/type?id=2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"car",
+						"all",
+						"model",
+						"type"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Car All Type Colour",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Auth-Token",
+						"type": "text",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfZW1haWwiOiJiZXJuYW5kb3RvcnJlejRAZ21haWwuY29tIiwiX3Bob25lIjoiMTIzNDU2Nzg5MCIsIl9kYXRlX2JpcnRoIjoiMTk5NS0xMC0xOSIsIl9pc0FkbWluIjpmYWxzZSwiaWF0IjoxNTg5MjU3MzMzfQ.KVUkrYfVMK-Ysvz5K74gv0CrTCIlgibJ77AsFb1aib8"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:3001/car/all/type/colour?id=3",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"car",
+						"all",
+						"type",
+						"colour"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get One Car Type Colour",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Auth-Token",
+						"type": "text",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfZW1haWwiOiJiZXJuYW5kb3RvcnJlejRAZ21haWwuY29tIiwiX3Bob25lIjoiMTIzNDU2Nzg5MCIsIl9kYXRlX2JpcnRoIjoiMTk5NS0xMC0xOSIsIl9pc0FkbWluIjpmYWxzZSwiaWF0IjoxNTg5MjU3MzMzfQ.KVUkrYfVMK-Ysvz5K74gv0CrTCIlgibJ77AsFb1aib8"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:3001/car/one/colour/detail?id=68&colour=698",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"car",
+						"one",
+						"colour",
+						"detail"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "68"
+						},
+						{
+							"key": "colour",
+							"value": "698"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Car All Model Type (Search)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Auth-Token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfZW1haWwiOiJiZXJuYW5kb3RvcnJlejRAZ21haWwuY29tIiwiX3Bob25lIjoiMTIzNDU2Nzg5MCIsIl9kYXRlX2JpcnRoIjoiMTk5NS0xMC0xOSIsIl9pc0FkbWluIjpmYWxzZSwiaWF0IjoxNTg5MjU3MzMzfQ.KVUkrYfVMK-Ysvz5K74gv0CrTCIlgibJ77AsFb1aib8",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:3001/car/all/model/type/search?id=2&q=cabri",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"car",
+						"all",
+						"model",
+						"type",
+						"search"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2"
+						},
+						{
+							"key": "q",
+							"value": "cabri"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Car All Type Colour (Search)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Auth-Token",
+						"type": "text",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfZW1haWwiOiJiZXJuYW5kb3RvcnJlejRAZ21haWwuY29tIiwiX3Bob25lIjoiMTIzNDU2Nzg5MCIsIl9kYXRlX2JpcnRoIjoiMTk5NS0xMC0xOSIsIl9pc0FkbWluIjpmYWxzZSwiaWF0IjoxNTg5MjU3MzMzfQ.KVUkrYfVMK-Ysvz5K74gv0CrTCIlgibJ77AsFb1aib8"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:3001/car/list/car/colour/search?id=3&q=blue",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"car",
+						"list",
+						"car",
+						"colour",
+						"search"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "3"
+						},
+						{
+							"key": "q",
+							"value": "blue"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Banner Porsche",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Auth-Token",
+						"type": "text",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfZW1haWwiOiJiZXJuYW5kb3RvcnJlejRAZ21haWwuY29tIiwiX3Bob25lIjoiMTIzNDU2Nzg5MCIsIl9kYXRlX2JpcnRoIjoiMTk5NS0xMC0xOSIsIl9pc0FkbWluIjpmYWxzZSwiaWF0IjoxNTg5MjU3MzMzfQ.KVUkrYfVMK-Ysvz5K74gv0CrTCIlgibJ77AsFb1aib8"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:3001/car/banner/porsche",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"car",
+						"banner",
+						"porsche"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
