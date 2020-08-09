@@ -14,6 +14,3 @@ Note jika sudah running :
 
 1. buka https://localhost:3001/
 2. saat membuka page tersebut pasti browser meminta certificate SSL, silahkan di Accept
-3. jika sudah baru kamu bisa jalankan Porsche Hybrid App nya
-
-note : karna kalau belum di accept Certificate SSL nya maka page API nya tidak bisa di akses oleh Porsche Hybrid App
